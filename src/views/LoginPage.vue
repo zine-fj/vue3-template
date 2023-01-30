@@ -7,15 +7,18 @@
 <script setup>
 // import { ref } from "vue";
 import { useRouter } from "vue-router";
-// import { useStore } from "vuex";
-import { getLogin } from "@/api/LoginAPI";
+import { useStore } from "vuex";
+import { getLogin } from "@/api/LoginApi";
+import { setToken } from "@/utils/auth";
 
-// const store = useStore();
+const store = useStore();
 const router = useRouter();
 const clickLogin = async () => {
   const { value } = await getLogin();
-  // store.commit("Login/TOKEN_MU", value.token);
-  router.push({ name: "List" });
+  setToken(value.token);
+  console.log("store: ", store);
+  store.commit("Login/TOKEN_MU", value.token);
+  router.push({ name: "ListPage" });
 };
 </script>
 
