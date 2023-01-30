@@ -6,10 +6,11 @@
 </template>
 
 <script setup>
-import { ref, onActivated } from "vue";
+import { onActivated, ref } from "vue";
 import { useRoute } from "vue-router";
-import PubHeader from "@/components/PubHeader.vue";
+
 import { getDetail } from "@/api/ListApi";
+import PubHeader from "@/components/PubHeader.vue";
 
 const route = useRoute();
 

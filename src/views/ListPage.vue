@@ -15,10 +15,11 @@
 </template>
 
 <script setup>
-import { ref, onActivated, onDeactivated } from "vue";
-import PubHeader from "@/components/PubHeader.vue";
-import PubCard from "@/components/PubCard.vue";
+import { onActivated, onDeactivated,ref } from "vue";
+
 import { getList } from "@/api/ListApi";
+import PubCard from "@/components/PubCard.vue";
+import PubHeader from "@/components/PubHeader.vue";
 
 const subscriptionList = ref([]);
 

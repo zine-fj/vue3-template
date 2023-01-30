@@ -1,5 +1,6 @@
 
 import { createStore } from 'vuex'
+
 import getters from './getters'
 const modulesFiles = require.context('./modules', true, /\.js$/)
 let modules = null

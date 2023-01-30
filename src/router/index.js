@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+
 import { getToken } from "@/utils/auth";
 
 const routes = [

@@ -27,9 +27,10 @@
 
 <script setup>
 import { defineProps } from "vue";
-import { useRouter, useRoute } from "vue-router";
-import { removeToken } from "@/utils/auth";
+import { useRoute,useRouter } from "vue-router";
+
 import { getLoginOut } from "@/api/LoginApi";
+import { removeToken } from "@/utils/auth";
 
 const route = useRoute();
 const router = useRouter();
