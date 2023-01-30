@@ -39,6 +39,7 @@ const getDetailFn = async () => {
 .subscription-detail {
   @include WHY();
   padding: 8px 24px;
+
   .detail-info {
     font-size: $fontSize14;
     color: $colorBlack;

@@ -27,7 +27,7 @@
 
 <script setup>
 import { defineProps } from "vue";
-import { useRoute,useRouter } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
 import { getLoginOut } from "@/api/LoginApi";
 import { removeToken } from "@/utils/auth";
@@ -48,8 +48,8 @@ const clickHeaderRight = async () => {
   const res = await getLoginOut();
   console.log("click - right", res);
   // if (res.statusCode === "200") {
-    removeToken();
-    router.push(`/login?redirect=${route.fullPath}`);
+  removeToken();
+  router.push(`/login?redirect=${route.fullPath}`);
   // }
 };
 </script>
