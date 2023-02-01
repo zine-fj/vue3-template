@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-eslint . --ext .js,.vue --fix #++ 校验所有.js .vue文件，并修复可自动修复的问题
-git add . #++ 用于将自动修复后改变的文件添加到暂存区
+# 添加 lint-staged 之前
+# eslint . --ext .js,.ts,.vue --fix #++ 校验所有.js .ts .vue文件，并修复可自动修复的问题
+# git add . #++ 用于将自动修复后改变的文件添加到暂存区
 
+# 添加 lint-staged 之后
+npm run lint-staged
