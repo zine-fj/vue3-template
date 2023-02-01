@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { onActivated, onDeactivated,ref } from "vue";
+import { onActivated, onDeactivated, ref } from "vue";
 
 import { getList } from "@/api/ListApi";
 import PubCard from "@/components/PubCard.vue";
@@ -84,6 +84,7 @@ const getListFn = async () => {
 .subscription-list-div {
   @include WHY();
   padding: 24px 11px 0 24px;
+
   .subscription-title {
     margin-bottom: 24px;
     color: $colorBlack;
@@ -91,9 +92,11 @@ const getListFn = async () => {
     font-weight: 200;
     line-height: 36px;
   }
+
   .subscription-list {
     .subscription-list-empty {
       margin: 16px 13px 0 0;
+
       .empty-word {
         line-height: 30px;
         text-align: center;
