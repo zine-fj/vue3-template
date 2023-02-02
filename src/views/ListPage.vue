@@ -83,6 +83,7 @@ const getListFn = async () => {
 
 .subscription-list-div {
   @include WHY();
+  height: calc(100% - 44px);
   padding: 24px 11px 0 24px;
 
   .subscription-title {
