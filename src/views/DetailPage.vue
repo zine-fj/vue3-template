@@ -41,6 +41,7 @@ const getDetailFn = async () => {
   padding: 8px 24px;
 
   .detail-info {
+    display: flex;
     font-size: $fontSize14;
     color: $colorBlack;
   }
